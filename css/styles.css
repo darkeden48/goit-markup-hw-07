@@ -63,7 +63,7 @@ textarea{
 }
  /* HEADER */
  .header{
-    border-bottom: 1px solid var(--border-color-header);;
+    border-bottom: 1px solid var(--border-color-header);
 }
 .header-conteiner{
     display:flex;   
