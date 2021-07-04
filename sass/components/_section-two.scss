@@ -12,14 +12,13 @@
 }
 .section-two-list{
     display: flex;
-}
-.section-two-list .section-two-list__item:not(:last-child){
+& &__item:not(:last-child){
     margin-right: 30px;
 }
-.section-two-list__item__img{
+&__item__img{
 position: relative;
 }
-.section-two-list__item__img__overlay{
+&__item__img__overlay{
     position: absolute;
     display: flex;
     align-items: center;
@@ -34,4 +33,5 @@ position: relative;
     text-transform: uppercase;
     background: rgba(47, 48, 58, 0.8);
     color:var(--background-color);
+}
 }

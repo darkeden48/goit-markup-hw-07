@@ -2,49 +2,48 @@
     display: flex;
     flex-wrap: wrap;
     }
-    .portfolio-menu-list__item:nth-child(3n + 3){
+    .portfolio-menu-list__item{
+        margin-right:30px;
+        margin-bottom: 30px;
+    &:nth-child(3n + 3){
         margin-right: 0;
         }
-    .portfolio-menu-list__item:nth-last-child(-n + 3){
+    &:nth-last-child(-n + 3){
         margin-bottom: 0;
         }
-    .portfolio-menu-list__item{
-    margin-right:30px;
-    margin-bottom: 30px;
     }
     .portfolio-menu-list__item__link{
         display: block;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         box-shadow:0;
-    }
-    .portfolio-menu-list__item__link:focus, 
-    .portfolio-menu-list__item__link:hover{
+    &:focus, 
+    &:hover{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px 
         rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
-    .portfolio-menu-list__item__link__info{
+    &__info{
     border-left: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
     border-right: 1px solid var(--border-color);
     padding: 20px 24px;
     }
-    .portfolio-menu-list__item__link__info__title{
+    &__info__title{
         font-weight: bold;
         font-size: 18px;
         line-height: 2;
         color: var(--text-color);
         margin-bottom: 4px;
     }
-    .portfolio-menu-list__item__link__info__text{
+    &__info__text{
         font-size: 16px;
         line-height: 1.87;
         color: var(--under-text-color);
     }
-    .portfolio-menu-list__item__link__img{
+    &__img{
     position: relative;
     overflow: hidden;
     }
-    .portfolio-menu-list__item__link__img__overlay{
+    &__img__overlay{
     position: absolute;
     top: 0;
     left:0;
@@ -55,15 +54,16 @@
       transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
     }
-    .portfolio-menu-list__item__link__img__overlay__text{
+    &__img__overlay__text{
         padding: 63px 24px;
         font-size: 18px;
         line-height: 1.55;
         letter-spacing: 0.03em;
         color: var(--portfolio-background);
     }
-    .portfolio-menu-list__item__link:hover .portfolio-menu-list__item__link__img__overlay,
-    .portfolio-menu-list__item__link:focus .portfolio-menu-list__item__link__img__overlay{ 
+    &:hover &__img__overlay,
+    &:focus &__img__overlay{ 
         transform: translatey(0);
         opacity: 1;
     }
+}
