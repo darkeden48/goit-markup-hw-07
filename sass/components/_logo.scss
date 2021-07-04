@@ -7,10 +7,10 @@
     letter-spacing: 0.03em;
     padding-top: 24px;
     padding-bottom: 25px;
-}
-.logo__studio{
+&__studio{
     color: var(--text-color);
 }
-.logo__studio-footer{
+&__studio-footer{
     color: var(--log);
+}
 }
