@@ -5,12 +5,15 @@
     line-height: 1.19;
     color:var(--logo);
     letter-spacing: 0.03em;
-    padding-top: 24px;
     padding-bottom: 25px;
+    padding-top: 24px;
 &__studio{
     color: var(--text-color);
 }
 &__studio-footer{
     color: var(--log);
 }
+}
+.conteiner-footer ~ .logo{
+    padding-top: 0;
 }
