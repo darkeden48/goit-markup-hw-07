@@ -1,8 +1,7 @@
 .section-three{
     background-color: var(--background-section-three);
     align-items: center;
-    }
-    .section-three-title{
+    &__title{
         font-weight: bold;
         font-size: 36px;
         line-height: 1.16;
@@ -10,33 +9,34 @@
         justify-content: center;
         margin-bottom: 50px;
     }
-    .section-three-names-list{
+    &__names-list{
         display: flex;
-    & &__item:not(:last-child){
+    }
+    &__names-list .section-three-names-item:not(:last-child){
             margin-right: 30px;
     }
-    &__item{
+}
+.section-three-names-item{
         display: flex;
         flex-direction: column;
         align-items: center;
         border-radius: 0px 0px 4px 4px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         background-color: var(--background-color);
-    }
-    &__item__names-info{
+    &__names-info{
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 30px 32px;
     }
-    &__item__names-info__title{
+    &__title{
         font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
         letter-spacing: 0.03em;
         margin-bottom: 10px;
     }
-    &__item__names-info__text{
+    &__text{
         font-size: 16px;
         line-height: 1.18;
         margin-bottom: 16px;
@@ -45,18 +45,17 @@
 }
     .icon-names-info{
         display: flex;
-    }
-    .icon-names-info__item{
+    &__item{
         display: flex;
         width: 44px;
         height: 44px;
         align-items: center;
         background-color:var(--background-color);
-        &:not(:last-child){
+    }
+    &__item:not(:last-child){
             margin-right:10px;
         }
-    }
-    .icon-names-info__item__link{
+    &__link{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -64,13 +63,14 @@
         height: 100%;
         border-radius: 50%;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, 
-    &:focus{
+    }
+    &__link:hover, 
+    &__link:focus{
         background-color: var(--animation-bottons);
         cursor: pointer;
     }
-    &:hover .icon-names-info__item__link__icon, 
-    &:focus .icon-names-info__item__link__icon{
+    &__link:hover &__icon, 
+    &__link:focus &__icon{
         fill: var(--background-color);
     }
     &__icon{
