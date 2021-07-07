@@ -7,38 +7,36 @@
  .nav{
      display:flex;
      align-items: center;
-     &__menu{
+&__menu{
         display: flex;
         margin-right: 305px;
         margin-left: 93px;
    }
- }
-.nav__menu__item{
+&__item{
     position: relative;
-    &:not(:first-child) {
-        margin-left: 50px;
-    }
-}
-.nav__menu__item,
-.nav__menu__item__link, 
-.contacts-list__item__link{
     padding-bottom: 32px;
     padding-top: 32px;
 }
- .nav__menu__item__link{
+&__item:not(:first-child) {
+        margin-left: 50px;
+    }
+&__link{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:inherit;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:focus, &:hover {
+    padding-bottom: 32px;
+    padding-top: 32px;
+ }
+&__link:focus, &__link:hover {
         color:var(--animation-links);
 }
-}
-.nav__menu__item__link-active{
+&__link_link-active{
     color: var(--animation-links);
-    &::after{
+}
+&__link_link-active::after{
         display: flex;
          position: absolute;
          content: ""; 
@@ -52,11 +50,14 @@
 .contacts-list{
     display: flex;
     align-items: center;
-    & .contacts-list__item:last-child{
+& &__item:last-child{
         margin-left: 30px;
      }
-}
- .contacts-list__item__link{
+&__link{
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+ &__link{
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -65,22 +66,23 @@
     letter-spacing: 0.02em;
     color: var(--under-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-&__icon-phone, 
-&__icon-mail{
+ }
+&__link-icon-phone, 
+&__link-icon-mail{
     margin-right: 10px;
     fill: var(--under-text-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-&:focus, 
-&:hover {
+&__link:focus, 
+&__link:hover {
     color:var(--animation-links);
 }
-&:focus &__icon-phone, 
-&:hover &__icon-phone{
+&__link:focus &__link-icon-phone, 
+&__link:hover &__link-icon-phone{
      fill:var(--animation-links);
 }
-&:focus &__icon-mail, 
-&:hover &__icon-mail{
+&__link:focus &__link-icon-mail, 
+&__link:hover &__link-icon-mail{
     fill:var(--animation-links);
 }
 }

@@ -12,6 +12,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 color: var(--background-color);
+text-transform:uppercase;
 }
 &__input{
     width: 358px;
@@ -30,7 +31,7 @@ color: var(--background-color);
     color: rgba(255, 255, 255, 0.6);
 }
 }
-.subscribe__button-place__button{
+.subscribe__button-place__button-link{
     display: flex;
     align-content: center;
     align-items: center;
