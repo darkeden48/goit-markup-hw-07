@@ -104,7 +104,6 @@ img {
   color: var(--logo);
   letter-spacing: 0.03em;
   padding-bottom: 25px;
-  padding-top: 24px;
 }
 
 .logo__studio {
@@ -115,8 +114,8 @@ img {
   color: var(--log);
 }
 
-.conteiner-footer ~ .logo {
-  padding-top: 0;
+.nav .logo {
+  padding-top: 24px;
 }
 
 .header {
@@ -827,7 +826,7 @@ img {
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
   transform: translatey(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
 }
 
@@ -842,7 +841,7 @@ img {
 .portfolio-menu-list__item__link:hover .portfolio-menu-list__item__link__img__overlay,
 .portfolio-menu-list__item__link:focus .portfolio-menu-list__item__link__img__overlay {
   transform: translatey(0);
-  opacity: 1;
+  opacity: 0;
 }
 
 .address {

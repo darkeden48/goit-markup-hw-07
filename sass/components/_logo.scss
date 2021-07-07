@@ -6,7 +6,6 @@
     color:var(--logo);
     letter-spacing: 0.03em;
     padding-bottom: 25px;
-    padding-top: 24px;
 &__studio{
     color: var(--text-color);
 }
@@ -14,6 +13,6 @@
     color: var(--log);
 }
 }
-.conteiner-footer ~ .logo{
-    padding-top: 0;
+.nav .logo{
+    padding-top: 24px;
 }
